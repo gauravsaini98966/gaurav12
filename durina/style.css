@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;  
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    /* display: flex; */
+ width: 100%;
+ height: 100vh;
+ /* background-color: aqua; */
+}
+.container_top{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    background-color: blue;
+}
+.container_top_left{
+    width: 60%;
+    height: 100%;
+    background-color: aqua;
+
+}
+.container_top_left .durina_logo{
+   
+    padding-left: 136px;
+}
+.container_top_right{
+width: 40%;
+height: 100%;
+background-color: blue;
+}
+.navbar ul{
+    display: flex;
+}
+.container_bottom{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    /* background-color: blanchedalmond; */
+}
+.container_bottom_left{
+    width: 50%;
+    height: 100%;
+    /* background-color: blueviolet; */
+}
+.container_bottom_right{
+    width: 50%;
+    height: 100%;
+    /* background-color: brown; */
+   
+}
+.container_bottom_right img{
+    padding-left:100px;
+    padding-top: 40px;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+}
+.container_bottom_left{
+    /* justify-content: center;
+     */
+     /* padding: 150px; */
+     padding-top: 100px;
+     padding-left: 150px;
+     line-height: 70px;
+}
+.container_bottom_left h2{
+    color:rgba(0, 0, 0, 0.788);
+        font-size: 45px;
+    font-weight:700;
+}
+.container_bottom_left .p1{
+    /* display: inline-block; */
+    color:rgb(255, 94, 1);
+    /* width: 100%; */
+    font-size: 45px;
+    font-weight: 700;
+}
+.container_bottom_left .p2{
+    font-size: 29px;
+    color:#263238;
+}

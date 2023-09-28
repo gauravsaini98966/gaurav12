@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    /* position: fixed; */
+    background-color: #2F1893;
+
+}
+.top{
+    width: 100%;
+    height: 60%;
+}
+.bottom{
+    width: 100%;
+    height: 40%;
+}
+.navbar{
+    display: flex;
+    /* border: 2px solid black; */
+    padding:42px 50px;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.navbar h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+ .navbar ul{
+    display: flex;
+     list-style: none;
+
+     padding: 0px 20px;
+} 
+.navbar ul li{
+    padding: 0 20px;
+    
+    
+}
+
+.navbar ul li a{
+text-decoration: none;
+color:#fff;
+/* border-top:2px solid   #3103ff; */
+font-size: 22px;
+}
+.navbar ul li a:hover{
+    text-decoration: underline;
+}
+.nav_manu{
+    display: flex;
+
+}
+
+.navbtn .btn{
+    padding:8px 20px;
+    border-radius: 20px;
+    border: none;
+
+}
+
+.content{
+   
+   
+}
+.paragrap{
+    /* position: absolute; */
+    /* height: 100vh; */
+     display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 15px;
+
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+   
+}
+#bottommenu{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+#bottommenu input{
+padding: 8px;
+border-radius: 5px;
+width: 20%;
+height:40px;
+border: none;
+margin-right: 5px;
+}
+
+#bottommenu  .btn{
+    padding:8px 20px;
+    border-radius: 20px;
+    border: none;
+    color:black;
+    /* background: transparent; */
+}
