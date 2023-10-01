@@ -1,50 +1,124 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Sample Form</title>
+    <style>
+        .formbottom {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 
-    
-    <link href="style.css" rel="stylesheet">
+/* Style form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
 
+/* Style form inputs and textarea */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    /* outline:aquamarine ; */
+    border-radius: 5px;
+    font-size: 16px;
+}
 
+/* Style the submit button */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Style the checkbox and its label */
+input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Add some spacing between checkbox and label */
+p {
+    display: inline;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+    </style>
 </head>
 <body>
-    <div class="wrapper">
-        <form>
-            <h1>login</h1>
-            <div class="input-box">
-                
-                <input type="text" placeholder="Username "  required>
-                <i class='bx bxs-user'></i>
+    <div class="formbottom">
+        <form id="myForm" action="">
+            <div class="formbottom_top">
+                <label for="firstName">First name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First name" required>
+
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last name" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
             </div>
 
-            <div class="input-box">
-                <input type="password" placeholder="Password" required>
-                <i class='bx bxs-lock-alt'></i>
+            <div class="choose">
+                <label for="topic">Choose a topic</label>
+                <input type="text" id="topic" name="topic" required>
+                <select id="topicSelect" name="topicSelect">
+                    <option value=""></option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                </select>
             </div>
-            <div class="remember-forget">
-                <label><input type="checkbox">Remanber me</label>
-                <a href="#"> Forgot password </a>
+
+            <div class="textarea">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
             </div>
-          <button type="button" class="btn">Login</button>
 
-          <div class="register-link">
-            <p>Don't have an account?
-            <a href="#">Register</a></p>
-          </div>
-
-
-
-
+            <div>
+                <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+                <label for="acceptTerms">I accept the terms</label>
+            </div>
+            
+            <div class="button">
+                <button type="button" onclick="submitForm()">Submit</button>
+            </div>
         </form>
     </div>
+
+    <script>
+        function submitForm() {
+            // Get form element
+            var form = document.getElementById("myForm");
+
+            // Check if the form is valid
+            if (form.checkValidity()) {
+                // Form is valid, you can submit it here or perform any other action
+                alert("Form submitted successfully!");
+                // Uncomment the line below to actually submit the form
+                // form.submit();
+            } else {
+                // Form is invalid, show an error message or perform any other action
+                alert("Please fill in all required fields and accept the terms.");
+            }
+        }
+    </script>
 </body>
 </html>
-
-
-
-
-

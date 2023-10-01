@@ -43,12 +43,22 @@ padding-top: 30px;
     padding:0 20px;
     
 }
+.nav_menu ul li:hover{
+    /* text-decoration: underline; */
+    transition: 1.0s;
+    cursor: pointer;
+    color: #608AF5;
+}
+
 .nav_menu ul li a {
     font-size: 20px;
     text-decoration: none;
     /* color:black; */
     color:  #212121;
     
+}
+.nav_menu ul li a:hover{
+    color:  #608AF5 ;
 }
 
 .btn{
@@ -67,8 +77,13 @@ font-size: 20px;
 font-weight: 600;
 border-radius: 4px;
 border: none;
-
+transition: 0.5s;
    
+}
+.btn button:hover{
+    background: #0042eb;
+    color: #000000;
+cursor: pointer;
 }
 .textpic{
     /* width: 100%; */
@@ -224,4 +239,84 @@ text-align: center;
 .contect h1{
     color: #14279B;
     font-size: 32px;
+}
+
+
+
+
+/* container2 end--------------- */
+
+
+.container3{
+    /* position: fixed; */
+}
+
+
+.contect{
+    text-align: center;
+}
+
+
+.contect h1{
+    color: #14279B;
+    letter-spacing: 2px;
+}
+
+.contect h1 span{
+    color: #172774;
+}
+.socialmedia{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.container3 .topimage{
+position:relative;
+}
+.container3 .bottomimage{
+    position: absolute;
+     left: 170px;
+     padding-top: 30px;
+     
+}
+
+
+.topimage2{
+    position: relative;
+}
+
+.bottomimage2{
+    position: absolute;
+    left: 470px;
+    padding-top:30px ;
+}
+
+.topimage3{
+    position: relative;
+}
+.bottomimage3{
+    position: absolute;
+    left: 770px;
+    padding-top: 35px;
+}
+
+.topimage4{
+    position: relative;
+}
+.bottomimage4{
+    position: absolute;
+    left: 1080px;
+    padding-top: 35px;
+
+}
+.social h1{
+    /* padding-left: 10px; */
+padding-top: 20px;
+    text-align: center;
+}
+
+.lastimage img{
+    width: 100%;
+   
 }

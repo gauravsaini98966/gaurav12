@@ -1,0 +1,16 @@
+
+@media  only screen and (max-width:1200px){
+    body{
+        /* background-color: #091133; */
+    }
+
+    .navbar ul{
+        display: flex;
+        justify-content: space-around;
+        padding-left: 38px;
+    }
+    
+
+   
+}
+  
