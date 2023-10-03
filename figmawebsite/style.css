@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container1{
+
+    /* background-image: url(img/Element.png); */
+
+}
+
+.manubar{
+    display: flex;
+    justify-content: space-between;
+    background-color:#043873;
+    /* align-items: center; */
+   
+    
+}
+.logo {
+    padding: 25px 30px;
+    color: white;
+
+}
+.logo img{
+width: 191px;
+height: 34px; ;
+}
+.nav_menu{
+    padding-top: 30px;
+
+}
+.nav_menu ul{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+
+}
+.nav_menu ul i{
+    color: #ffff;
+    padding-right: 1px;
+    padding-top: 4px;
+    margin-left: 3px;
+    /* border: 1px solid black; */
+    /* padding-right: 10px; */
+
+}
+
+.nav_menu ul li{
+    list-style-type: none;
+    padding:0 20px;
+    
+}
+.nav_menu ul li a{
+    text-decoration: none;
+    color: #ffff;
+    
+}
+
+
+.btn{
+padding-top: 20px;
+padding-right: 30px;
+
+}
+.btn button{
+    padding: 12px 24px;
+    background-color: #4F9CF9;
+    border: none;
+    border-radius: 5px;
+    color: #ffff;
+    gap: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.btn button i{
+    /* margin-top: 10px; */
+    /* font-size: 20px; */
+    /* padding-top: 20px; */
+}
+.btn button:hover{
+/* padding: 14px 28px;     */
+color: #000;
+background-color: #2982f0;
+
+}
+
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #043873;
+    background-image:url(img/Element.png );
+    color: #ffff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.col-1{
+padding-left: 40px;
+}
+.col-1 h1{
+    color: #ffff;
+    font-size: 50px;
+    font-weight: 900;
+    padding-bottom: 20px;
+
+}
+.col-1 p{
+    line-height: 26px;
+    padding-bottom: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.col-2{
+    width:685px;
+    height: 456px;
+/* border: 1px solid black; */
+padding-right: 20px;
+
+}
+.col-2 img{
+    width: 90%;
+    height: 95%;
+}
+
+/* .container1---end */
+.container2{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 80px;
+    
+}
+.text{
+padding-left: 30px;
+padding-right: 35px;
+padding-top: 50px;
+}
+
+.text h1{
+    font-size: 40px;
+    color: #212529;
+    font-weight: 900;
+    padding-bottom: 10px;
+    
+}
+.text p{
+    font-size: 14px;
+}
+
+.pic{
+padding-right: 30px;
+/* border-radius: 4px; */
+}
+
+.pic img{
+ width: 80vh;
+ height: 60vh;
+ border-radius: 5px;
+
+}
+.btn2{
+    padding-top: 30px;
+}
